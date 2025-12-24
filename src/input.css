@@ -9,7 +9,11 @@
 @layer components {
 
   .navbar {
-    @apply flex items-center p-8 bg-slate-900 rounded-b-2xl shadow-2xl text-slate-100;
+    @apply flex items-center p-8 bg-slate-900 rounded-b-2xl shadow-slate-500 shadow-2xl text-slate-100;
+  }
+
+  .navname {
+    @apply text-slate-300 font-bold
   }
 
   .left-nav {
@@ -79,7 +83,7 @@
     @apply flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-lg w-fit;
   }
 
-  /* ===== BUTTONS ===== */
+  /* buttons */
   .hero-actions {
     @apply flex gap-4;
   }
@@ -94,9 +98,56 @@
            hover:bg-blue-50 transition;
   }
 
-  /* ===== HERO IMAGE ===== */
+  /* hero image */
   .hero-image {
-    @apply w-full aspect-video object-cover rounded-2xl shadow-2xl
-           transition-transform duration-500 hover:scale-[1.02];
+    @apply w-full aspect-video object-cover rounded-2xl shadow-slate-500 shadow-xl
+           transition duration-500 hover:scale-[1.02] hover:shadow-2xl;
   }
+
+  .about-section {
+    @apply mt-32 mb-32 text-center flex flex-col items-center gap-4;
+  }
+
+  .about-header {
+    @apply text-4xl font-extrabold text-gray-900 mb-2;
+  }
+
+  .about-subheader {
+    @apply text-gray-600 max-w-2xl text-lg mx-auto;
+  }
+
+  .about-content {
+    @apply grid grid-cols-3 gap-4 mt-4;
+  }
+
+  .about-paragraph {
+    @apply flex flex-col justify-center p-6 col-span-2 bg-white shadow-lg rounded-2xl
+           hover:shadow-xl transition duration-300 text-gray-700 text-left leading-7;
+  }
+
+  .about-cards {
+    @apply flex flex-col gap-4 text-left;
+  }
+
+  .about-card {
+    @apply flex gap-4 items-start bg-blue-50 p-6 rounded-2xl
+           shadow-md shadow-blue-200 hover:shadow-xl transition duration-300;
+  }
+
+  .icon-box {
+    @apply bg-blue-200 text-blue-700 p-3 rounded-xl;
+  }
+
+  .icon {
+    @apply w-6 h-6;
+  }
+
+  .about-card h3 {
+    @apply text-lg font-bold text-gray-900;
+  }
+
+  .about-card p {
+    @apply text-gray-600 text-sm;
+  }
+
 }
