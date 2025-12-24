@@ -104,15 +104,15 @@
            transition duration-500 hover:scale-[1.02] hover:shadow-2xl;
   }
 
-  .about-section {
+  .about-section, .skill-section {
     @apply mt-32 mb-32 text-center flex flex-col items-center gap-4;
   }
 
-  .about-header {
+  .about-header, .skill-header {
     @apply text-4xl font-extrabold text-gray-900 mb-2;
   }
 
-  .about-subheader {
+  .about-subheader, .skill-subheader {
     @apply text-gray-600 max-w-2xl text-lg mx-auto;
   }
 
@@ -125,7 +125,7 @@
            hover:shadow-xl transition duration-300 text-gray-700 text-left leading-7;
   }
 
-  .about-cards {
+  .about-cards, .skill-cards {
     @apply flex flex-col gap-4 text-left;
   }
 
@@ -149,5 +149,51 @@
   .about-card p {
     @apply text-gray-600 text-sm;
   }
+
+  .skill-card {
+    @apply bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition
+          flex flex-col gap-4;
+  }
+
+  .skill-top {
+    @apply flex items-start gap-4;
+  }
+
+  .skill-top h3 {
+    @apply text-lg font-bold text-gray-900;
+  }
+
+  .skill-top p {
+    @apply text-sm text-gray-600;
+  }
+
+  .skill-icon {
+    @apply w-12 h-12 flex items-center justify-center rounded-xl text-white;
+  }
+
+  .skill-icon svg {
+    @apply w-6 h-6;
+  }
+
+  /* warna per skill */
+  .skill-icon.html { @apply bg-orange-500; }
+  .skill-icon.css { @apply bg-blue-500; }
+  .skill-icon.js { @apply bg-yellow-400 text-black; }
+  .skill-icon.react { @apply bg-cyan-500; }
+  .skill-icon.git { @apply bg-red-500; }
+  .skill-icon.responsive { @apply bg-indigo-500; }
+
+  .skill-bar {
+    @apply w-full h-2 bg-gray-200 rounded-full overflow-hidden;
+  }
+
+  .skill-bar span {
+    @apply block h-full bg-blue-500 rounded-full;
+  }
+
+  .skill-card small {
+    @apply text-right text-sm font-semibold text-blue-500;
+  }
+
 
 }
