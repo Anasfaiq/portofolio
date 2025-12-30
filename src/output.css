@@ -270,6 +270,7 @@
   body {
     background-color: var(--color-slate-50);
     font-family: var(--font-sans);
+    color: var(--color-slate-900);
   }
 }
 @layer components {
