@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,32 +8,34 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar">
-      <div class="left-nav">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        >
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="18" x2="21" y2="18" />
-        </svg>
-        <p class="navname">Anas Faiq</p>
-      </div>
+    <header>
+      <nav class="navbar">
+        <div class="left-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <p class="navname">Anas Faiq</p>
+        </div>
 
-      <div class="right-nav">
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#about-me">About</a>
-        <a class="nav-item" href="#skills">Skills</a>
-        <a class="nav-item" href="#projects">Projects</a>
-        <a class="nav-item" href="#contact">Contact</a>
-      </div>
-    </nav>
+        <div class="right-nav">
+          <a class="nav-item" href="#home">Home</a>
+          <a class="nav-item" href="#about-me">About</a>
+          <a class="nav-item" href="#skills">Skills</a>
+          <a class="nav-item" href="#projects">Projects</a>
+          <a class="nav-item" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
     <!-- main content -->
     <main id="home" class="main-wrapper">
@@ -334,18 +336,15 @@
         <div class="list-project">
           <div class="project-card group">
             <section class="project-image-container">
-              <img
-                class="project-image"
-                src="image/etch-a-sketch.png"
-                alt=""
-              />
+              <img class="project-image" src="image/etch-a-sketch.png" alt="" />
               <!-- overlay -->
               <div class="project-overlay"></div>
             </section>
             <section class="project-desc-container">
               <p class="project-title">Etch-a-Sketch</p>
               <p class="project-desc">
-                A fun and interactive Etch A Sketch app where users can draw by hovering over a dynamic grid.
+                A fun and interactive Etch A Sketch app where users can draw by
+                hovering over a dynamic grid.
               </p>
               <div class="language-wrapper">
                 <span class="language-badge">HTML</span>
@@ -414,7 +413,8 @@
             <section class="project-desc-container">
               <p class="project-title">News App</p>
               <p class="project-desc">
-                A clean frontend news application designed to display categorized articles with an intuitive user interface.
+                A clean frontend news application designed to display
+                categorized articles with an intuitive user interface.
               </p>
               <div class="language-wrapper">
                 <span class="language-badge">HTML</span>
@@ -482,7 +482,9 @@
             <section class="project-desc-container">
               <p class="project-title">Calculator</p>
               <p class="project-desc">
-                A simple and responsive calculator application built with JavaScript, featuring basic arithmetic operations and real-time input handling.
+                A simple and responsive calculator application built with
+                JavaScript, featuring basic arithmetic operations and real-time
+                input handling.
               </p>
               <div class="language-wrapper">
                 <span class="language-badge">HTML</span>
@@ -813,5 +815,6 @@
         <p class="footer-bottom">© 2025 Anas Faiq</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
